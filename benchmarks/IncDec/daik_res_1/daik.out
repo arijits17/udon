@@ -1,0 +1,115 @@
+                                                                               ===========================================================================
+..__VERIFIER_atomic_acquire():::ENTER
+::value == ::inc_flag
+::m == ::dec_flag
+::m == ::inc_v
+::m == ::dec_v
+::value one of { 0, 1 }
+::m == 0
+===========================================================================
+..__VERIFIER_atomic_acquire():::EXIT
+::value == ::inc_flag
+::value == orig(::value)
+::value == orig(::inc_flag)
+::dec_flag == ::inc_v
+::dec_flag == ::dec_v
+::dec_flag == orig(::m)
+::dec_flag == orig(::dec_flag)
+::dec_flag == orig(::inc_v)
+::dec_flag == orig(::dec_v)
+::value one of { 0, 1 }
+::m == 1
+::dec_flag == 0
+===========================================================================
+..__VERIFIER_atomic_release():::ENTER
+::m == ::inc_flag
+::dec_flag == ::dec_v
+::value one of { 0, 1 }
+::m == 1
+::dec_flag one of { 0, 1 }
+::inc_v == 0
+===========================================================================
+..__VERIFIER_atomic_release():::EXIT
+::value == orig(::value)
+::m == ::inc_v
+::m == orig(::inc_v)
+::inc_flag == orig(::m)
+::inc_flag == orig(::inc_flag)
+::dec_flag == ::dec_v
+::dec_flag == orig(::dec_flag)
+::dec_flag == orig(::dec_v)
+::value one of { 0, 1 }
+::m == 0
+::inc_flag == 1
+::dec_flag one of { 0, 1 }
+===========================================================================
+..dec():::ENTER
+::value == ::inc_flag
+::m == ::dec_flag
+::m == ::inc_v
+::m == ::dec_v
+::value == 1
+::m == 0
+arg == null
+===========================================================================
+..dec():::EXIT
+::value == ::m
+::value == ::inc_v
+::value == orig(::m)
+::value == orig(::dec_flag)
+::value == orig(::inc_v)
+::value == orig(::dec_v)
+::inc_flag == ::dec_flag
+::inc_flag == ::dec_v
+::inc_flag == orig(::value)
+::inc_flag == orig(::inc_flag)
+::value == 0
+::inc_flag == 1
+return has only one value
+===========================================================================
+..inc():::ENTER
+::value == ::m
+::value == ::inc_flag
+::value == ::dec_flag
+::value == ::inc_v
+::value == ::dec_v
+::value == 0
+arg == null
+===========================================================================
+..inc():::EXIT
+::value == ::inc_flag
+::m == ::dec_flag
+::m == ::inc_v
+::m == ::dec_v
+::m == orig(::value)
+::m == orig(::m)
+::m == orig(::inc_flag)
+::m == orig(::dec_flag)
+::m == orig(::inc_v)
+::m == orig(::dec_v)
+::value == 1
+::m == 0
+return has only one value
+===========================================================================
+..main():::ENTER
+::value == ::m
+::value == ::inc_flag
+::value == ::dec_flag
+::value == ::inc_v
+::value == ::dec_v
+::value == 0
+===========================================================================
+..main():::EXIT
+::value == ::m
+::value == ::inc_v
+::value == orig(::value)
+::value == orig(::m)
+::value == orig(::inc_flag)
+::value == orig(::dec_flag)
+::value == orig(::inc_v)
+::value == orig(::dec_v)
+::inc_flag == ::dec_flag
+::inc_flag == ::dec_v
+::value == 0
+::inc_flag == 1
+return == 0

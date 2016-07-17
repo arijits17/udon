@@ -1,0 +1,198 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+ARRAY_TYPE	DaikonPass.h	/^static const string ARRAY_TYPE 	= "pointer";$/;"	v
+BIGSIZE	hook.c	18;"	d	file:
+BIGSIZE	zach_code/hook.c	15;"	d	file:
+CHAR_TYPE	DaikonPass.h	/^static const string CHAR_TYPE 	= "char";$/;"	v
+DAIKON_PASS_HH	DaikonPass.h	6;"	d
+DOUBLE_TYPE	DaikonPass.h	/^static const string DOUBLE_TYPE = "double";$/;"	v
+DaikonPass	DaikonPass.cpp	/^DaikonPass::DaikonPass():ModulePass(ID) { $/;"	f	class:DaikonPass
+DaikonPass	DaikonPass.h	/^class DaikonPass:public ModulePass {$/;"	c
+DaikonPass	zach_code/DaikonPass.cpp	/^DaikonPass::DaikonPass():ModulePass(ID) { $/;"	f	class:DaikonPass
+DummyVarInsertionPass	DaikonPass.cpp	/^DummyVarInsertionPass::DummyVarInsertionPass():ModulePass(ID) {$/;"	f	class:DummyVarInsertionPass
+DummyVarInsertionPass	DaikonPass.h	/^class DummyVarInsertionPass:public ModulePass {$/;"	c
+DummyVarInsertionPass	zach_code/DaikonPass.cpp	/^DummyVarInsertionPass::DummyVarInsertionPass():ModulePass(ID) {$/;"	f	class:DummyVarInsertionPass
+ENABLE_OPTIMIZE	Makefile	/^ENABLE_OPTIMIZE=0$/;"	m
+FALSE	hook.c	15;"	d	file:
+FALSE	zach_code/hook.c	12;"	d	file:
+FLOAT_TYPE	DaikonPass.h	/^static const string FLOAT_TYPE  = "float";$/;"	v
+HOOK_H	hook.h	2;"	d
+HOOK_H	zach_code/hook.h	2;"	d
+ID	DaikonPass.cpp	/^char DaikonPass::ID = 0;$/;"	m	class:DaikonPass	file:
+ID	DaikonPass.cpp	/^char DummyVarInsertionPass::ID = 0;$/;"	m	class:DummyVarInsertionPass	file:
+ID	DaikonPass.h	/^		static char ID;$/;"	m	class:DaikonPass
+ID	DaikonPass.h	/^		static char ID;$/;"	m	class:DummyVarInsertionPass
+ID	zach_code/DaikonPass.cpp	/^char DaikonPass::ID = 0;$/;"	m	class:DaikonPass	file:
+ID	zach_code/DaikonPass.cpp	/^char DummyVarInsertionPass::ID = 0;$/;"	m	class:DummyVarInsertionPass	file:
+INT_TYPE	DaikonPass.h	/^static const string INT_TYPE 	= "int";$/;"	v
+LEVEL	Makefile	/^LEVEL=..\/..\/..$/;"	m
+LIBRARYNAME	Makefile	/^LIBRARYNAME=DaikonPass$/;"	m
+LOADABLE_MODULE	Makefile	/^LOADABLE_MODULE=1$/;"	m
+LONG_TYPE	DaikonPass.h	/^static const string LONG_TYPE 	= "long";$/;"	v
+POINTER_TYPE	DaikonPass.h	/^static const string POINTER_TYPE = "pointer";$/;"	v
+SHORT_TYPE	DaikonPass.h	/^static const string SHORT_TYPE 	= "short";$/;"	v
+SIZE	hook.c	17;"	d	file:
+SIZE	zach_code/hook.c	14;"	d	file:
+SMALL	hook.c	19;"	d	file:
+SMALL	zach_code/hook.c	16;"	d	file:
+STRUCT_TYPE	DaikonPass.h	/^static const string STRUCT_TYPE = "struct";$/;"	v
+TRUE	hook.c	14;"	d	file:
+TRUE	zach_code/hook.c	11;"	d	file:
+VOID_TYPE	DaikonPass.h	/^static const string VOID_TYPE = "void";$/;"	v
+blockBreaker	DaikonPass.cpp	/^void DaikonPass::blockBreaker(Instruction *inst) {$/;"	f	class:DaikonPass
+blockBreaker	zach_code/DaikonPass.cpp	/^void DaikonPass::blockBreaker(Instruction *inst) {$/;"	f	class:DaikonPass
+bool	hook.c	/^typedef int bool;$/;"	t	file:
+bool	zach_code/hook.c	/^typedef int bool;$/;"	t	file:
+callStackCounbter	hook.c	/^static __thread int callStackCounbter  = 0 ;$/;"	v	file:
+callStackCounbter	zach_code/hook.c	/^static __thread int callStackCounbter  = 0 ;$/;"	v	file:
+clapDummyVar	DaikonPass.h	/^		Value *clapDummyVar;$/;"	m	class:DaikonPass
+clap_chcHook	hook.c	/^void clap_chcHook(int varCount, ...) {$/;"	f
+clap_chcHook	zach_code/hook.c	/^void clap_chcHook(int varCount, ...) {$/;"	f
+clap_chcHookDynamic	hook.c	/^void clap_chcHookDynamic(int varCount, ...) {$/;"	f
+clap_chcHookDynamic	zach_code/hook.c	/^void clap_chcHookDynamic(int varCount, ...) {$/;"	f
+clap_hookBefore	hook.c	/^void clap_hookBefore(int varCount, ...) {$/;"	f
+clap_hookBefore	zach_code/hook.c	/^void clap_hookBefore(int varCount, ...) {$/;"	f
+clap_hookFuncBegin	hook.c	/^void clap_hookFuncBegin(int varCount, ...) {$/;"	f
+clap_hookFuncBegin	zach_code/hook.c	/^void clap_hookFuncBegin(int varCount, ...) {$/;"	f
+clap_hookFuncEnd	hook.c	/^void clap_hookFuncEnd(int varCount, ...) {$/;"	f
+clap_hookFuncEnd	zach_code/hook.c	/^void clap_hookFuncEnd(int varCount, ...) {$/;"	f
+counter	DaikonPass.cpp	/^static int counter = 0 ;$/;"	v	file:
+counter	zach_code/DaikonPass.cpp	/^static int counter = 0 ;$/;"	v	file:
+currentLockOwerId	hook.c	/^static int currentLockOwerId = -1; $/;"	v	file:
+currentLockOwerId	zach_code/hook.c	/^static int currentLockOwerId = -1; $/;"	v	file:
+declDumperForCSGlobals	DaikonPass.cpp	/^string DaikonPass::declDumperForCSGlobals(vector<string> variableNames, $/;"	f	class:DaikonPass
+declDumperForCSGlobals	zach_code/DaikonPass.cpp	/^string DaikonPass::declDumperForCSGlobals(vector<string> variableNames, $/;"	f	class:DaikonPass
+declDumperForGlobals	DaikonPass.cpp	/^string DaikonPass::declDumperForGlobals(Value *value ,bool EntryOrExit,Instruction *instr) {$/;"	f	class:DaikonPass
+declDumperForGlobals	zach_code/DaikonPass.cpp	/^string DaikonPass::declDumperForGlobals(Value *value ,bool EntryOrExit,Instruction *instr) {$/;"	f	class:DaikonPass
+displayGlobalVars	DaikonPass.cpp	/^void DaikonPass::displayGlobalVars() {$/;"	f	class:DaikonPass
+displayGlobalVars	zach_code/DaikonPass.cpp	/^void DaikonPass::displayGlobalVars() {$/;"	f	class:DaikonPass
+displayLoadedProgrampoints	DaikonPass.cpp	/^void DaikonPass::displayLoadedProgrampoints() {$/;"	f	class:DaikonPass
+displayLoadedProgrampoints	zach_code/DaikonPass.cpp	/^void DaikonPass::displayLoadedProgrampoints() {$/;"	f	class:DaikonPass
+doInit	DaikonPass.cpp	/^void DaikonPass::doInit(Module *module) {$/;"	f	class:DaikonPass
+doInit	zach_code/DaikonPass.cpp	/^void DaikonPass::doInit(Module *module) {$/;"	f	class:DaikonPass
+doNotInstrument	DaikonPass.cpp	/^bool DaikonPass::doNotInstrument(StringRef funcName) {$/;"	f	class:DaikonPass
+doNotInstrument	zach_code/DaikonPass.cpp	/^bool DaikonPass::doNotInstrument(StringRef funcName) {$/;"	f	class:DaikonPass
+doNotInstrumentFunctions	DaikonPass.h	/^		vector<string> 	doNotInstrumentFunctions;$/;"	m	class:DaikonPass
+do_nothing	hook.c	/^void do_nothing() {$/;"	f
+do_nothing	zach_code/hook.c	/^void do_nothing() {$/;"	f
+doubleType	DaikonPass.h	/^		Type *doubleType;$/;"	m	class:DaikonPass
+dummyVar	DaikonPass.h	/^		GlobalVariable *dummyVar;$/;"	m	class:DummyVarInsertionPass
+dumpArrays	DaikonPass.cpp	/^void DaikonPass::dumpArrays(fstream &declFile,$/;"	f	class:DaikonPass
+dumpArrays	zach_code/DaikonPass.cpp	/^void DaikonPass::dumpArrays(fstream &declFile,$/;"	f	class:DaikonPass
+dumpDeclFile	DaikonPass.cpp	/^void DaikonPass::dumpDeclFile(Module &module) {$/;"	f	class:DaikonPass
+dumpDeclFile	zach_code/DaikonPass.cpp	/^void DaikonPass::dumpDeclFile(Module &module) {$/;"	f	class:DaikonPass
+dumpDeclFileAtEntryAndExit	DaikonPass.cpp	/^void DaikonPass::dumpDeclFileAtEntryAndExit(Function *func,string EntryOrExit, fstream &declFile) {$/;"	f	class:DaikonPass
+dumpDeclFileAtEntryAndExit	zach_code/DaikonPass.cpp	/^void DaikonPass::dumpDeclFileAtEntryAndExit(Function *func,string EntryOrExit, fstream &declFile) {$/;"	f	class:DaikonPass
+dumpForHookAfterFunction	DaikonPass.cpp	/^void DaikonPass::dumpForHookAfterFunction(fstream &declFile, string EntryOrExit,Function *func) {$/;"	f	class:DaikonPass
+dumpForHookAfterFunction	zach_code/DaikonPass.cpp	/^void DaikonPass::dumpForHookAfterFunction(fstream &declFile, string EntryOrExit,Function *func) {$/;"	f	class:DaikonPass
+dumpPointers	DaikonPass.cpp	/^void DaikonPass::dumpPointers(fstream &declFile, Value *pointerElement,$/;"	f	class:DaikonPass
+dumpStructureMembers	DaikonPass.cpp	/^void DaikonPass::dumpStructureMembers(fstream &declFile,$/;"	f	class:DaikonPass
+dumpStructureMembers	zach_code/DaikonPass.cpp	/^void DaikonPass::dumpStructureMembers(fstream &declFile,$/;"	f	class:DaikonPass
+dump_array_data_types	hook.c	/^static void dump_array_data_types(FILE *fp,void *data,char *varName,char *varType, const int size) {$/;"	f	file:
+dump_basic_data_types	hook.c	/^static void dump_basic_data_types(FILE *fp,void *data,char *varName,char *varType) {$/;"	f	file:
+dump_pointer_data_types	hook.c	/^static void dump_pointer_data_types(FILE *fp,void *data,char *varName,char *varType) {$/;"	f	file:
+dump_scalar_data_types	hook.c	/^static void dump_scalar_data_types(FILE *fp,void *data,char *varName,char *varType) {$/;"	f	file:
+fileName	hook.c	/^static const char *fileName = "program.dtrace";$/;"	v	file:
+fileName	zach_code/hook.c	/^static const char *fileName = "program.dtrace";$/;"	v	file:
+flagToWriteVersionIntoDtrace	hook.c	/^static int flagToWriteVersionIntoDtrace = 0;$/;"	v	file:
+flagToWriteVersionIntoDtrace	zach_code/hook.c	/^static int flagToWriteVersionIntoDtrace = 0;$/;"	v	file:
+floatType	DaikonPass.h	/^		Type *floatType;$/;"	m	class:DaikonPass
+fp	hook.c	/^FILE *fp;$/;"	v
+fp	zach_code/hook.c	/^FILE *fp;$/;"	v
+functionType	DaikonPass.h	/^		FunctionType *functionType;$/;"	m	class:DaikonPass
+generateProgramPoints	DaikonPass.cpp	/^void DaikonPass::generateProgramPoints(Module &module) {$/;"	f	class:DaikonPass
+generateProgramPoints	zach_code/DaikonPass.cpp	/^void DaikonPass::generateProgramPoints(Module &module) {$/;"	f	class:DaikonPass
+getArrayElementType	DaikonPass.cpp	/^Type* DaikonPass::getArrayElementType(Type *ty) {$/;"	f	class:DaikonPass
+getArrayElementTypeString	DaikonPass.cpp	/^string DaikonPass::getArrayElementTypeString(Type *ty) {$/;"	f	class:DaikonPass
+getDebugFilename	FileInfo.cpp	/^StringRef getDebugFilename(Instruction *inst) {$/;"	f
+getDebugLineNum	FileInfo.cpp	/^unsigned getDebugLineNum(Instruction *inst) {$/;"	f
+getDecTypeString	DaikonPass.cpp	/^string DaikonPass::getDecTypeString(Type *ty) {$/;"	f	class:DaikonPass
+getDecTypeString	DaikonPass.cpp	/^string DaikonPass::getDecTypeString(Value *val) {$/;"	f	class:DaikonPass
+getDecTypeString	zach_code/DaikonPass.cpp	/^string DaikonPass::getDecTypeString(Type *ty) {$/;"	f	class:DaikonPass
+getDecTypeString	zach_code/DaikonPass.cpp	/^string DaikonPass::getDecTypeString(Value *val) {$/;"	f	class:DaikonPass
+getGlobalType	DaikonPass.cpp	/^Type*  DaikonPass::getGlobalType(PointerType *ty) {$/;"	f	class:DaikonPass
+getGlobalType	zach_code/DaikonPass.cpp	/^Type*  DaikonPass::getGlobalType(PointerType *ty) {$/;"	f	class:DaikonPass
+getModuleName	FileInfo.cpp	/^StringRef getModuleName(Module &module) {$/;"	f
+getPointerElementType	DaikonPass.cpp	/^Type* DaikonPass::getPointerElementType(Type *ty) {$/;"	f	class:DaikonPass
+getPointerElementTypeString	DaikonPass.cpp	/^string DaikonPass::getPointerElementTypeString(Type *ty) {$/;"	f	class:DaikonPass
+getRepTypeString	DaikonPass.cpp	/^string DaikonPass::getRepTypeString(Type *ty) {$/;"	f	class:DaikonPass
+getRepTypeString	DaikonPass.cpp	/^string DaikonPass::getRepTypeString(Value *val) {$/;"	f	class:DaikonPass
+getRepTypeString	zach_code/DaikonPass.cpp	/^string DaikonPass::getRepTypeString(Type *ty) {$/;"	f	class:DaikonPass
+getRepTypeString	zach_code/DaikonPass.cpp	/^string DaikonPass::getRepTypeString(Value *val) {$/;"	f	class:DaikonPass
+getTypeString	DaikonPass.cpp	/^string DaikonPass::getTypeString(Type *type) {$/;"	f	class:DaikonPass
+getTypeString	DaikonPass.cpp	/^string DaikonPass::getTypeString(Value *value) {$/;"	f	class:DaikonPass
+getTypeString	zach_code/DaikonPass.cpp	/^string DaikonPass::getTypeString(Type *type) {$/;"	f	class:DaikonPass
+getTypeString	zach_code/DaikonPass.cpp	/^string DaikonPass::getTypeString(Value *value) {$/;"	f	class:DaikonPass
+getValueForString	DaikonPass.cpp	/^Value* DaikonPass::getValueForString(StringRef variableName,Module *module) {$/;"	f	class:DaikonPass
+getValueForString	zach_code/DaikonPass.cpp	/^Value* DaikonPass::getValueForString(StringRef variableName,Module *module) {$/;"	f	class:DaikonPass
+globalList	DaikonPass.h	/^		vector<GlobalVariable*>  globalList;$/;"	m	class:DaikonPass
+handleStoreInst	DaikonPass.cpp	/^void DaikonPass::handleStoreInst(StoreInst *storeInst) {$/;"	f	class:DaikonPass
+handleStoreInst	zach_code/DaikonPass.cpp	/^void DaikonPass::handleStoreInst(StoreInst *storeInst) {$/;"	f	class:DaikonPass
+hookAfter	zach_code/hook.c	/^void hookAfter(void *val) {$/;"	f
+hookAtFunctionEnd	DaikonPass.cpp	/^void DaikonPass::hookAtFunctionEnd(Function *func) {$/;"	f	class:DaikonPass
+hookAtFunctionEnd	zach_code/DaikonPass.cpp	/^void DaikonPass::hookAtFunctionEnd(Function *func) {$/;"	f	class:DaikonPass
+hookAtFunctionStart	DaikonPass.cpp	/^void DaikonPass::hookAtFunctionStart(Function *func) {$/;"	f	class:DaikonPass
+hookAtFunctionStart	zach_code/DaikonPass.cpp	/^void DaikonPass::hookAtFunctionStart(Function *func) {$/;"	f	class:DaikonPass
+hook_assert	hook.h	8;"	d
+hook_assert	zach_code/hook.h	8;"	d
+insertDummyStoreIntoFunction	DaikonPass.cpp	/^void DummyVarInsertionPass::insertDummyStoreIntoFunction (Function *func) {$/;"	f	class:DummyVarInsertionPass
+insertDummyStoreIntoFunction	zach_code/DaikonPass.cpp	/^void DummyVarInsertionPass::insertDummyStoreIntoFunction (Function *func) {$/;"	f	class:DummyVarInsertionPass
+insertDynamicCallAtGlobalAccess	DaikonPass.cpp	/^void DaikonPass::insertDynamicCallAtGlobalAccess(Function *func) {$/;"	f	class:DaikonPass
+insertDynamicCallAtGlobalAccess	zach_code/DaikonPass.cpp	/^void DaikonPass::insertDynamicCallAtGlobalAccess(Function *func) {$/;"	f	class:DaikonPass
+int16Type	DaikonPass.h	/^		IntegerType *int16Type;$/;"	m	class:DaikonPass
+int32Type	DaikonPass.h	/^		IntegerType *int32Type;$/;"	m	class:DaikonPass
+int64Type	DaikonPass.h	/^		IntegerType *int64Type;$/;"	m	class:DaikonPass
+int8Type	DaikonPass.h	/^		IntegerType *int8Type ; 	$/;"	m	class:DaikonPass
+isCurrentOwnerOfLock	hook.c	/^bool isCurrentOwnerOfLock() {$/;"	f
+isCurrentOwnerOfLock	zach_code/hook.c	/^bool isCurrentOwnerOfLock() {$/;"	f
+isGlobal	DaikonPass.cpp	/^bool DaikonPass::isGlobal(Value *value) {$/;"	f	class:DaikonPass
+isGlobal	zach_code/DaikonPass.cpp	/^bool DaikonPass::isGlobal(Value *value) {$/;"	f	class:DaikonPass
+isInit	DaikonPass.cpp	/^bool DaikonPass::isInit = false;$/;"	m	class:DaikonPass	file:
+isInit	DaikonPass.h	/^		static bool isInit;$/;"	m	class:DaikonPass
+isInit	zach_code/DaikonPass.cpp	/^bool DaikonPass::isInit = false;$/;"	m	class:DaikonPass	file:
+isSupportedType	DaikonPass.cpp	/^bool DaikonPass::isSupportedType(Type *type) {$/;"	f	class:DaikonPass
+isSupportedType	DaikonPass.cpp	/^bool DaikonPass::isSupportedType(Value *val) {$/;"	f	class:DaikonPass
+isSupportedType	zach_code/DaikonPass.cpp	/^bool DaikonPass::isSupportedType(Type *type) {$/;"	f	class:DaikonPass
+isSupportedType	zach_code/DaikonPass.cpp	/^bool DaikonPass::isSupportedType(Value *val) {$/;"	f	class:DaikonPass
+loadProgramPoints	DaikonPass.cpp	/^void DaikonPass::loadProgramPoints(Module &module) {$/;"	f	class:DaikonPass
+loadProgramPoints	zach_code/DaikonPass.cpp	/^void DaikonPass::loadProgramPoints(Module &module) {$/;"	f	class:DaikonPass
+lock	hook.c	/^static pthread_mutex_t lock = PTHREAD_MUTEX_INITIALIZER;$/;"	v	file:
+lock	zach_code/hook.c	/^static pthread_mutex_t lock = PTHREAD_MUTEX_INITIALIZER;$/;"	v	file:
+populateGlobals	DaikonPass.cpp	/^void DaikonPass::populateGlobals(Module &module) {$/;"	f	class:DaikonPass
+populateGlobals	zach_code/DaikonPass.cpp	/^void DaikonPass::populateGlobals(Module &module) {$/;"	f	class:DaikonPass
+programPoints	DaikonPass.h	/^		vector<string> programPoints;$/;"	m	class:DaikonPass
+ptr16Type	DaikonPass.h	/^		PointerType *ptr16Type;$/;"	m	class:DaikonPass
+ptr32Type	DaikonPass.h	/^		PointerType *ptr32Type;$/;"	m	class:DaikonPass
+ptr64Type	DaikonPass.h	/^		PointerType *ptr64Type;$/;"	m	class:DaikonPass
+ptr8Type	DaikonPass.h	/^		PointerType *ptr8Type ;$/;"	m	class:DaikonPass
+ptrDoubleType	DaikonPass.h	/^		PointerType *ptrDoubleType;$/;"	m	class:DaikonPass
+ptrFloatType	DaikonPass.h	/^		PointerType *ptrFloatType;$/;"	m	class:DaikonPass
+ptrPtr32Type	DaikonPass.h	/^		PointerType *ptrPtr32Type;$/;"	m	class:DaikonPass
+ptrPtr64Type	DaikonPass.h	/^		PointerType *ptrPtr64Type;$/;"	m	class:DaikonPass
+ptrStructType	DaikonPass.h	/^		PointerType *ptrStructType;$/;"	m	class:DaikonPass
+putTabInFile	DaikonPass.cpp	/^void DaikonPass::putTabInFile(fstream &stream, int tabCount) {$/;"	f	class:DaikonPass
+putTabInFile	zach_code/DaikonPass.cpp	/^void DaikonPass::putTabInFile(fstream &stream, int tabCount) {$/;"	f	class:DaikonPass
+runOnModule	DaikonPass.cpp	/^bool DaikonPass::runOnModule(Module &module) {$/;"	f	class:DaikonPass
+runOnModule	DaikonPass.cpp	/^bool DummyVarInsertionPass::runOnModule(Module &module) {$/;"	f	class:DummyVarInsertionPass
+runOnModule	zach_code/DaikonPass.cpp	/^bool DaikonPass::runOnModule(Module &module) {$/;"	f	class:DaikonPass
+runOnModule	zach_code/DaikonPass.cpp	/^bool DummyVarInsertionPass::runOnModule(Module &module) {$/;"	f	class:DummyVarInsertionPass
+std_lock	hook.c	/^void std_lock() {$/;"	f
+std_lock	zach_code/hook.c	/^void std_lock() {$/;"	f
+std_unlock	hook.c	/^void std_unlock() {$/;"	f
+std_unlock	zach_code/hook.c	/^void std_unlock() {$/;"	f
+structType	DaikonPass.h	/^		StructType *structType;$/;"	m	class:DaikonPass
+testMethod	DaikonPass.cpp	/^void DaikonPass::testMethod(Function *func) {$/;"	f	class:DaikonPass
+testMethod	zach_code/DaikonPass.cpp	/^void DaikonPass::testMethod(Function *func) {$/;"	f	class:DaikonPass
+threadId	hook.c	/^static __thread int threadId;$/;"	v	file:
+threadId	zach_code/hook.c	/^static __thread int threadId;$/;"	v	file:
+voidType	DaikonPass.h	/^		Type *voidType ;$/;"	m	class:DaikonPass
+writeInfoIntoDtrace	hook.c	/^void writeInfoIntoDtrace() {$/;"	f
+writeInfoIntoDtrace	zach_code/hook.c	/^void writeInfoIntoDtrace() {$/;"	f
+write_assert_failure_trace	hook.c	/^void write_assert_failure_trace() {$/;"	f
+write_assert_failure_trace	zach_code/hook.c	/^void write_assert_failure_trace() {$/;"	f
+write_thread_id	hook.c	/^void write_thread_id(FILE *fp) {$/;"	f
+write_thread_id	zach_code/hook.c	/^void write_thread_id(FILE *fp) {$/;"	f

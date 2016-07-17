@@ -1,0 +1,158 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+all_clean	controller.py	/^def all_clean():$/;"	f
+all_clean	controller_ui.py	/^def all_clean():$/;"	f
+blank	r_tool.py	/^blank = " ";$/;"	v
+blank	r_tool_ui.py	/^blank = " ";$/;"	v
+blank	runner.py	/^blank = " "$/;"	v
+blank	runner_ui.py	/^blank = " "$/;"	v
+clang_generic_flag	r_tool.py	/^clang_generic_flag = "-S -emit-llvm -g";   $/;"	v
+clang_generic_flag	r_tool_ui.py	/^clang_generic_flag = "-S -emit-llvm -g";   $/;"	v
+clang_tool	r_tool.py	/^clang_tool   	= llvm_bin_path+"\/clang" ;$/;"	v
+clang_tool	r_tool_ui.py	/^clang_tool   	= llvm_bin_path+"\/clang" ;$/;"	v
+clap_opt_flag	r_tool.py	/^clap_opt_flag  = " -basicaa -tap_inst_number -tap_pthreads -tap_mem"$/;"	v
+clap_opt_flag	r_tool_ui.py	/^clap_opt_flag  = " -basicaa -tap_inst_number -tap_pthreads -tap_mem"$/;"	v
+cleanup	r_tool.py	/^def cleanup(temp_file_list) :$/;"	f
+cleanup	r_tool_ui.py	/^def cleanup(temp_file_list) :$/;"	f
+cleanup	runner.py	/^def cleanup():$/;"	f
+cleanup	runner_ui.py	/^def cleanup():$/;"	f
+compile	controller.py	/^def compile():$/;"	f
+compile	controller_ui.py	/^def compile():$/;"	f
+compile_all_files	r_tool.py	/^def compile_all_files(src,sp):$/;"	f
+compile_all_files	r_tool_ui.py	/^def compile_all_files(src,sp):$/;"	f
+compile_by_clang	r_tool.py	/^def compile_by_clang(filename,filename_without_extension) :$/;"	f
+compile_by_clang	r_tool_ui.py	/^def compile_by_clang(filename,filename_without_extension) :$/;"	f
+compiling	controller.py	/^def compiling() :$/;"	f
+compiling	controller_ui.py	/^def compiling() :$/;"	f
+cs_clean	controller.py	/^def cs_clean():$/;"	f
+cs_clean	controller_ui.py	/^def cs_clean():$/;"	f
+cs_compiling	controller.py	/^def cs_compiling():$/;"	f
+cs_compiling	controller_ui.py	/^def cs_compiling():$/;"	f
+cs_runner	controller.py	/^def cs_runner(sp_count):$/;"	f
+cs_runner	controller_ui.py	/^def cs_runner(sp_count,alg_choice,alg_count,arg):$/;"	f
+cs_tool_usage	controller.py	/^def cs_tool_usage():$/;"	f
+cs_tool_usage	controller_ui.py	/^def cs_tool_usage():$/;"	f
+daikon_path	controller.py	/^daikon_path=os.environ.get('daikon');$/;"	v
+daikon_path	controller_ui.py	/^daikon_path=os.environ.get('daikon');$/;"	v
+daikon_src_path	r_tool.py	/^daikon_src_path = "\/home\/ari\/cvs\/src\/llvm-3.2.src\/lib\/Transforms\/Daikon\/"$/;"	v
+daikon_src_path	r_tool_ui.py	/^daikon_src_path = os.environ.get("daikon");$/;"	v
+decompile_to_asm	r_tool.py	/^def decompile_to_asm(filename):$/;"	f
+decompile_to_asm	r_tool_ui.py	/^def decompile_to_asm(filename):$/;"	f
+do_final_llvm_linking	r_tool.py	/^def do_final_llvm_linking(instrumented_obj_file,hook_obj_file) :$/;"	f
+do_final_llvm_linking	r_tool_ui.py	/^def do_final_llvm_linking(instrumented_obj_file,hook_obj_file) :$/;"	f
+do_instrumentation	runner.py	/^def do_instrumentation() :$/;"	f
+do_instrumentation	runner_ui.py	/^def do_instrumentation() :$/;"	f
+do_instrumentation_sp	runner.py	/^def do_instrumentation_sp(sp_val) :$/;"	f
+do_instrumentation_sp	runner_ui.py	/^def do_instrumentation_sp(sp_val) :$/;"	f
+dtrace_manip	controller.py	/^def dtrace_manip(counter):$/;"	f
+dtrace_manip	controller_ui.py	/^def dtrace_manip(counter):$/;"	f
+dtrace_manip_for_daikon	controller.py	/^def dtrace_manip_for_daikon(counter):$/;"	f
+dtrace_manip_for_daikon	controller_ui.py	/^def dtrace_manip_for_daikon(counter):$/;"	f
+dump_ppt_and_decl	controller.py	/^def  dump_ppt_and_decl():$/;"	f
+dump_ppt_and_decl	controller_ui.py	/^def  dump_ppt_and_decl():$/;"	f
+dump_program_point	r_tool.py	/^def dump_program_point(src):$/;"	f
+dump_program_point	r_tool_ui.py	/^def dump_program_point(src):$/;"	f
+gcc_compilation	r_tool.py	/^def gcc_compilation(filename):$/;"	f
+gcc_compilation	r_tool_ui.py	/^def gcc_compilation(filename):$/;"	f
+gcc_tool	r_tool.py	/^gcc_tool 	= "gcc";$/;"	v
+gcc_tool	r_tool_ui.py	/^gcc_tool 	= "gcc";$/;"	v
+gen_ppts	runner.py	/^def gen_ppts():$/;"	f
+gen_ppts	runner_ui.py	/^def gen_ppts():$/;"	f
+gen_program_point_for_file	r_tool.py	/^def gen_program_point_for_file(filename):$/;"	f
+gen_program_point_for_file	r_tool_ui.py	/^def gen_program_point_for_file(filename):$/;"	f
+hook_file_path	r_tool.py	/^hook_file_path = "\/home\/ari\/cvs\/src\/llvm-3.2.src\/lib\/Transforms\/Daikon\/hook.c"$/;"	v
+hook_file_path	r_tool_ui.py	/^hook_file_path = daikon_src_path+"hook.c"$/;"	v
+init	controller.py	/^def init():$/;"	f
+init	controller_ui.py	/^def init():$/;"	f
+inspect_lib_path	r_tool.py	/^inspect_lib_path = inspect_path+"\/lib";$/;"	v
+inspect_lib_path	r_tool_ui.py	/^inspect_lib_path = inspect_path+"\/lib";$/;"	v
+inspect_path	r_tool.py	/^inspect_path 	 = os.environ.get('insp');$/;"	v
+inspect_path	r_tool_ui.py	/^inspect_path 	 = os.environ.get('insp');$/;"	v
+java	runner.py	/^java  = "java"$/;"	v
+java	runner_ui.py	/^java  = "java"$/;"	v
+ld_lib_flag	r_tool.py	/^ld_lib_flag 	 = " -Wl,-rpath,"+inspect_lib_path;$/;"	v
+ld_lib_flag	r_tool_ui.py	/^ld_lib_flag 	 = " -Wl,-rpath,"+inspect_lib_path;$/;"	v
+link_flags	r_tool.py	/^link_flags = " -linspect -lpthread -lrt -lm -lstdc++ ";$/;"	v
+link_flags	r_tool_ui.py	/^link_flags = " -linspect -lpthread -lrt -lm -lstdc++ ";$/;"	v
+llvm_bin_path	r_tool.py	/^llvm_bin_path 	= llvm_build_path+"\/bin" ;$/;"	v
+llvm_bin_path	r_tool_ui.py	/^llvm_bin_path 	= llvm_build_path+"\/bin" ;$/;"	v
+llvm_build_path	r_tool.py	/^llvm_build_path = os.environ.get('llvm');$/;"	v
+llvm_build_path	r_tool_ui.py	/^llvm_build_path = os.environ.get('llvm');$/;"	v
+llvm_dis_tool	r_tool.py	/^llvm_dis_tool 	= llvm_bin_path+"\/llvm-dis" ;$/;"	v
+llvm_dis_tool	r_tool_ui.py	/^llvm_dis_tool 	= llvm_bin_path+"\/llvm-dis" ;$/;"	v
+llvm_lib_path	r_tool.py	/^llvm_lib_path 	= llvm_build_path+"\/lib";$/;"	v
+llvm_lib_path	r_tool_ui.py	/^llvm_lib_path 	= llvm_build_path+"\/lib";$/;"	v
+llvm_link_tool	r_tool.py	/^llvm_link_tool 	= llvm_bin_path+"\/llvm-link";$/;"	v
+llvm_link_tool	r_tool_ui.py	/^llvm_link_tool 	= llvm_bin_path+"\/llvm-link";$/;"	v
+llvm_llc_tool	r_tool.py	/^llvm_llc_tool 	= llvm_bin_path+"\/llc";$/;"	v
+llvm_llc_tool	r_tool_ui.py	/^llvm_llc_tool 	= llvm_bin_path+"\/llc";$/;"	v
+llvm_src_path	r_tool.py	/^llvm_src_path 	= "" ;$/;"	v
+llvm_src_path	r_tool_ui.py	/^llvm_src_path 	= "" ;$/;"	v
+load_and_run	controller.py	/^def load_and_run():$/;"	f
+load_and_run	controller_ui.py	/^def load_and_run(algo_choice,count,arg):$/;"	f
+main_controller	controller.py	/^def main_controller() :$/;"	f
+main_controller	controller_ui.py	/^def main_controller() :$/;"	f
+main_controller	r_tool.py	/^def main_controller():$/;"	f
+main_controller	r_tool_ui.py	/^def main_controller():$/;"	f
+main_controller	runner.py	/^def main_controller() :$/;"	f
+main_controller	runner_ui.py	/^def main_controller() :$/;"	f
+main_cs	controller.py	/^def main_cs():$/;"	f
+main_cs	controller_ui.py	/^def main_cs():$/;"	f
+main_daikon	controller.py	/^def main_daikon() :$/;"	f
+main_daikon	controller_ui.py	/^def main_daikon() :$/;"	f
+main_rtool	controller.py	/^def main_rtool():$/;"	f
+main_rtool	controller_ui.py	/^def main_rtool():$/;"	f
+only_parser	runner.py	/^def only_parser():$/;"	f
+only_parser	runner_ui.py	/^def only_parser():$/;"	f
+opt_tool	r_tool.py	/^opt_tool     	= llvm_bin_path+"\/opt"   ;$/;"	v
+opt_tool	r_tool_ui.py	/^opt_tool     	= llvm_bin_path+"\/opt"   ;$/;"	v
+os	controller.py	/^import os;$/;"	i
+os	controller_ui.py	/^import os;$/;"	i
+os	r_tool.py	/^import os;$/;"	i
+os	r_tool_ui.py	/^import os;$/;"	i
+os	runner.py	/^import os;$/;"	i
+os	runner_ui.py	/^import os;$/;"	i
+parser	runner.py	/^def parser() :$/;"	f
+parser	runner_ui.py	/^def parser() :$/;"	f
+r_tool_usage	controller.py	/^def r_tool_usage() :$/;"	f
+r_tool_usage	controller_ui.py	/^def r_tool_usage() :$/;"	f
+rtool	runner.py	/^rtool = "r_tool.py"$/;"	v
+rtool	runner_ui.py	/^rtool = "r_tool_ui.py"$/;"	v
+run_clap_pass	r_tool.py	/^def run_clap_pass(filename,filename_without_extension) :$/;"	f
+run_clap_pass	r_tool_ui.py	/^def run_clap_pass(filename,filename_without_extension) :$/;"	f
+run_daikon	controller.py	/^def run_daikon():$/;"	f
+run_daikon	controller_ui.py	/^def run_daikon():$/;"	f
+run_daikon_pass	r_tool.py	/^def run_daikon_pass(filename,filename_without_extension):$/;"	f
+run_daikon_pass	r_tool_ui.py	/^def run_daikon_pass(filename,filename_without_extension):$/;"	f
+run_daikon_pass_with_spacer	r_tool.py	/^def run_daikon_pass_with_spacer(filename,filename_without_extension,spacer):$/;"	f
+run_daikon_pass_with_spacer	r_tool_ui.py	/^def run_daikon_pass_with_spacer(filename,filename_without_extension,spacer):$/;"	f
+run_dummy_daikon_pass	r_tool.py	/^def run_dummy_daikon_pass(filename,filename_without_extension):$/;"	f
+run_dummy_daikon_pass	r_tool_ui.py	/^def run_dummy_daikon_pass(filename,filename_without_extension):$/;"	f
+run_executable	controller.py	/^def run_executable():$/;"	f
+run_executable	controller_ui.py	/^def run_executable():$/;"	f
+runner	controller.py	/^def runner():$/;"	f
+runner	controller_ui.py	/^def runner():$/;"	f
+runner	runner.py	/^def runner(choice,count,argument) :                               $/;"	f
+runner	runner_ui.py	/^def runner(choice,count,argument) :                               $/;"	f
+shutil	controller.py	/^import shutil;$/;"	i
+shutil	controller_ui.py	/^import shutil;$/;"	i
+shutil	r_tool.py	/^import shutil;$/;"	i
+shutil	r_tool_ui.py	/^import shutil;$/;"	i
+shutil	runner.py	/^import shutil;$/;"	i
+shutil	runner_ui.py	/^import shutil;$/;"	i
+sys	controller.py	/^import sys;$/;"	i
+sys	controller_ui.py	/^import sys;$/;"	i
+sys	r_tool.py	/^import sys;$/;"	i
+sys	r_tool_ui.py	/^import sys;$/;"	i
+sys	runner.py	/^import sys;$/;"	i
+sys	runner_ui.py	/^import sys;$/;"	i
+tr_clean	controller.py	/^def tr_clean() :$/;"	f
+tr_clean	controller_ui.py	/^def tr_clean() :$/;"	f
+usage	runner.py	/^def usage() :$/;"	f
+usage	runner_ui.py	/^def usage() :$/;"	f
+usage_for_daikon	controller.py	/^def usage_for_daikon():$/;"	f
+usage_for_daikon	controller_ui.py	/^def usage_for_daikon():$/;"	f

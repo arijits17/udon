@@ -1,0 +1,65 @@
+                                                                               ===========================================================================
+..__VERIFIER_atomic_CAS():::ENTER
+::value == ::inc_flag
+::value == ::dec_flag
+::value == e
+::value == 0
+v has only one value
+u == 1
+r has only one value
+flag has only one value
+===========================================================================
+..__VERIFIER_atomic_CAS():::EXIT
+::value == ::inc_flag
+::value == orig(u)
+::dec_flag == orig(::value)
+::dec_flag == orig(::inc_flag)
+::dec_flag == orig(::dec_flag)
+::dec_flag == orig(e)
+::value == 1
+::dec_flag == 0
+===========================================================================
+..dec():::ENTER
+::value == ::inc_flag
+::value == 1
+::dec_flag == 0
+arg == null
+===========================================================================
+..dec():::EXIT
+::value == ::inc_flag
+::value == orig(::value)
+::value == orig(::inc_flag)
+::dec_flag == orig(::dec_flag)
+return == orig(arg)
+::value == 1
+::dec_flag == 0
+return == null
+===========================================================================
+..inc():::ENTER
+::value == ::inc_flag
+::value == ::dec_flag
+::value == 0
+arg == null
+===========================================================================
+..inc():::EXIT
+::value == ::inc_flag
+::dec_flag == orig(::value)
+::dec_flag == orig(::inc_flag)
+::dec_flag == orig(::dec_flag)
+::value == 1
+::dec_flag == 0
+return has only one value
+===========================================================================
+..main():::ENTER
+::value == ::inc_flag
+::value == ::dec_flag
+::value == 0
+===========================================================================
+..main():::EXIT
+::value == ::inc_flag
+::dec_flag == orig(::value)
+::dec_flag == orig(::inc_flag)
+::dec_flag == orig(::dec_flag)
+::value == 1
+::dec_flag == 0
+return == 0

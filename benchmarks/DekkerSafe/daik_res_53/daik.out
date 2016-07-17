@@ -1,0 +1,56 @@
+                                                                               ===========================================================================
+..main():::ENTER
+::flag1 == ::flag2
+::flag1 == ::turn
+::flag1 == ::x
+::flag1 == 0
+===========================================================================
+..main():::EXIT
+::flag1 == ::flag2
+::flag1 == return
+::flag1 == orig(::flag1)
+::flag1 == orig(::flag2)
+::flag1 == orig(::turn)
+::flag1 == orig(::x)
+::flag1 == 0
+::turn == 1
+::x one of { 0, 1 }
+::flag1 <= ::x
+::turn >= ::x
+===========================================================================
+..thr1():::ENTER
+::flag1 == ::flag2
+::turn == ::x
+::flag1 == 0
+::turn one of { 0, 1 }
+::flag1 <= ::turn
+===========================================================================
+..thr1():::EXIT
+::flag1 == ::flag2
+::flag1 == ::x
+::flag1 == orig(::flag1)
+::flag1 == orig(::flag2)
+::flag1 == 0
+::turn == 1
+return == null
+::flag1 <= orig(::turn)
+::turn >= orig(::turn)
+===========================================================================
+..thr2():::ENTER
+::flag1 == ::flag2
+::flag1 == ::x
+::flag1 == 0
+::turn one of { 0, 1 }
+::flag1 <= ::turn
+===========================================================================
+..thr2():::EXIT
+::flag1 == ::flag2
+::flag1 == orig(::flag1)
+::flag1 == orig(::flag2)
+::flag1 == orig(::x)
+::turn == ::x
+::flag1 == 0
+::turn == 1
+return == null
+::flag1 <= orig(::turn)
+::turn >= orig(::turn)

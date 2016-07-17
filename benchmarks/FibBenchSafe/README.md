@@ -1,0 +1,20 @@
+From SVCOMP'13. 
+
+Location:
+
+    pthread/fib_bench_longer_safe.c
+
+Modifications:
+
+Added explicit assertion failure
+
+Added pthread_join() calls in main() befure return
+
+This is a nonterminating program.
+
+//Arijit
+Same in SVCOMP 14.
+
+
+//Arijit
+Removed the pthread_exit statements and assert(0) function.
