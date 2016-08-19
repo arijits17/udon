@@ -15,7 +15,8 @@ generates more-correct likely invariants.
 
 Note that the current LLVM frontend does not fully monitor all of the events
 relative to Kvasir (Daikon Valgrind based instrumentation): doing so would
-require modifications to the LLVM pass.
+require modifications to the LLVM pass. Particuarly, the pass does not generate
+comparability information.
 
 ### Install
 ------------------------------------------
