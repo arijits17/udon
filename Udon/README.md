@@ -1,10 +1,21 @@
-## R\_Tool
+## Udon
 =========================================
 
-RTool is a dynamic invariant generation tool for sequential and concurrent C/C++ programs.
-It builds upon the LLVM compiler front-end (llvm-3.2), the INSPECT concurrency testing
-tool (inspect-0.3), a Java based trace classifier (SimpleDeclParser) and the 
-Daikon dynamic invariant generation tool (daikon).
+Udon contains: (1) and LLVM frontend for Daikon, and (2) a method to
+automatically preturb concurrent schedules to increase observed dynamic
+behavior. It builds upon the LLVM compiler front-end (llvm-3.2), the INSPECT
+concurrency testing tool (inspect-0.3), a Java based trace classifier
+(SimpleDeclParser) and the Daikon dynamic invariant generation tool (daikon).
+
+You can use Udon in two ways: first, as an LLVM frontend for Daikon, and second
+as a system to automatically explore concurrent programs and generate
+invariants. We've found experimentally that using automated techniques to
+generate new thread schedules, as opposed to simply re-executing the program,
+generates more-correct likely invariants.
+
+Note that the current LLVM frontend does not fully monitor all of the events
+relative to Kvasir (Daikon Valgrind based instrumentation): doing so would
+require modifications to the LLVM pass.
 
 ### Install
 ------------------------------------------
@@ -28,10 +39,10 @@ LLVM,
     existing folder called `llvm-3.2.src/lib/Transforms`.
   - Then, go to the `build` directory, which should contain `conf.sh` file.
   - Run the `conf.sh` from the build folder. This will build LLVM and all its
-    code transformation passes that are needed to run RTool. The resulting
+    code transformation passes that are needed to run Udon. The resulting
     files are inside the `build/Release+Debug+Asserts` folder.
   - Finally, update the LLVM variables to have the complete path point to
-    `Release+Debug+Asserts` inside the RTool/exports.sh.
+    `Release+Debug+Asserts` inside the Udon/exports.sh.
 
 ### Install Inspect
 
@@ -41,22 +52,22 @@ compile and also copy the required files to the proper location.
 
 Installing Inspect is also straightforward. Go to the inspect-0.3 folder and
 run the `make` command from there. It will compile and create the inspect
-executatable inside the RTool/bin folder. To test whether the `make` command
+executatable inside the Udon/bin folder. To test whether the `make` command
 has been executed properly, check if you have the `inspect` executable in the
-`RTool/bin` folder. 
+`Udon/bin` folder. 
   
-After the installation, remember to set the `insp` path in the RTool/exports.sh
+After the installation, remember to set the `insp` path in the Udon/exports.sh
 file.
 
 ### Install the Trace Classifier
-The jar file for the trace classifier is present in the `RTool/jars` folder.
+The jar file for the trace classifier is present in the `Udon/jars` folder.
 Update the class path with the location of the `parser.jar` in
-`RTool/exports.sh`.
+`Udon/exports.sh`.
 
 Since the source code for that jar file is already present in the
-`RTool/SimpleDeclParser` folde again from the java source, using the included
+`Udon/SimpleDeclParser` folde again from the java source, using the included
 Makefile, and then update the corresponding classpath with the jar location in
-the `RTool/exports.sh`.
+the `Udon/exports.sh`.
 
 
 ### Install Daikon
@@ -65,8 +76,7 @@ The original guide for Daikon installation can be found at this
 
 Below is a brief summary of the major steps associated with this process.
 
- - Download and install jdk 1.7 \(I've found that jdk 1.6 does not work for the
-   current version of daikon\).
+ - Ensure your system meets the daikon [requirements](http://plse.cs.washington.edu/daikon/download/doc/daikon.html#Requirements).
  - Update the `JAVA_HOME` in the bashrc with the installation directory of
    JDK1.7.
  - Populate DAIKONDIR variable with the top directory of the daikon folder and
@@ -81,31 +91,31 @@ During the installation process, we have already updated various path
 variables. You may want to double check if all the path variables are set
 properly at this stage. 
 
-Once that is done, update the `PATH` variable with the `RTool/bin` and update
+Once that is done, update the `PATH` variable with the `Udon/bin` and update
 the `daikon` variable with the source folder where the DaikonPass resides.
 DaikonPass folder exists in the `llvm-3.2.src/lib/Transforms/Daikon` folder.
 This folder should contain the `hook.h` and `hook.c` files, which contains the
 source for the *hook_assert* macro that we have defined.
 
 
-## How to use R\_Tool
+## How to use Udon
 ===========================
-RTool can be used in three modes.
+Udon can be used in three modes.
 
 1. Use the existing daikon infrastructure through a nitty gritty interface.
-1. Use the RTool infrastructure to generate invarint at all function entry-exit
+1. Use the Udon infrastructure to generate invarint at all function entry-exit
    and around the global variable access locations.
 1. Generate the invariants at various location varied dynamically using command
    line control.
 
-Before using RTool, check if you can have access to the three scripts:
+Before using Udon, check if you can have access to the three scripts:
 `controller_ui.py`,`runner_ui.py` and `r_tool_ui.py`. If it is not possible to
 access these scripts, then update the path variable properly in the
-RTool/exports.sh and check again.
+Udon/exports.sh and check again.
 
-### 1.  RTool for Daikon as is
+### 1.  Udon for Daikon as is
 --------------------------------
-RTool can be used to run Daikon as is, in a more comprehensive way and using
+Udon can be used to run Daikon as is, in a more comprehensive way and using
 much shorter commands. To compile the target program (the program for which you
 want to generate invariants) and dump the program points, run the command 
 
@@ -136,21 +146,21 @@ backend by running the command from *arijit* folder,
 
 `java daikon.Daikon *.dtrace`
 
-### 2. RTool's Invariant Generation
-The main usage of the RTool is to generate invariants for not only sequential
+### 2. Udon's Invariant Generation
+The main usage of the Udon is to generate invariants for not only sequential
 C/C++ programs, but also concurrent C/C++ programs. For this purpose, we should
-invoke RTool in a similar fashion as discussed in the previous section.
+invoke Udon in a similar fashion as discussed in the previous section.
 However, we also need to run the target program under the supervision of the
 Inspect systematic concurrency testing tool. 
 
 To compile the program for Inspect and at the same time generate program
 points, use the below mentioned command.
 
-`controller_ui.py rtool comp`
+`controller_ui.py Udon comp`
 
 Once the instrumented program is generated, we can use
 
-`controller_ui.py rtool run $ # %`
+`controller_ui.py Udon run $ # %`
 
 Here, $ corresponds to the iteration count (as mentioned in the previous
 section), and # corresponds to the algo choice. Since Inspect can use three
@@ -160,8 +170,8 @@ choose the algorithm (0 -> DPOR, 1 -> PCB, 2->HaPSet). When we choose PCB or
 HaPSet, % denotes the number as required for PCB (context bounds) and HaPSet
 (size of HaPSet vectors). For DPOR, this number should be set to 0.
 
-### 3. RTool for Atomic Section Determination
-When RTool is used to automatically infer atomic sections in the program code,
+### 3. Udon for Atomic Section Determination
+When Udon is used to automatically infer atomic sections in the program code,
 the compilation should follow the exact same procedure as above, except that
 the first argument will be 'cs':
 
