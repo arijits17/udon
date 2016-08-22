@@ -1,23 +1,6 @@
 ## Udon
 =========================================
 
-Udon contains: (1) and LLVM frontend for Daikon, and (2) a method to
-automatically preturb concurrent schedules to increase observed dynamic
-behavior. It builds upon the LLVM compiler front-end (llvm-3.2), the INSPECT
-concurrency testing tool (inspect-0.3), a Java based trace classifier
-(SimpleDeclParser) and the Daikon dynamic invariant generation tool (daikon).
-
-You can use Udon in two ways: first, as an LLVM frontend for Daikon, and second
-as a system to automatically explore concurrent programs and generate
-invariants. We've found experimentally that using automated techniques to
-generate new thread schedules, as opposed to simply re-executing the program,
-generates more-correct likely invariants.
-
-Note that the current LLVM frontend does not fully monitor all of the events
-relative to Kvasir (Daikon Valgrind based instrumentation): doing so would
-require modifications to the LLVM pass. Particuarly, the pass does not generate
-comparability information.
-
 ### Install
 ------------------------------------------
 
